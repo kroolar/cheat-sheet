@@ -1,18 +1,11 @@
 import React from 'react'
-import {
-  Link,
-} from 'react-router-dom'
+import Button from '../components/Button'
 
 const Home = () => (
-  <>
-    <Link className="link" to="/">
-      RubyGems
-    </Link>
-
-    <Link className="linkk" to="/">
-      RubyGems
-    </Link>
-  </>
+  <div className="home">
+    <Button text="RubyGems" to="rubygems" />
+    <Button text="Ruby" to="ruby" />
+  </div>
 )
 
 export default Home
