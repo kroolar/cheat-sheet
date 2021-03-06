@@ -13,3 +13,12 @@
 body
   background-color: #F7F7F7
   min-height: 100vh
+
+.app
+  @each $name, $color in $colors
+    &--#{$name}
+      .nav
+        background-color: $color
+      .box__title
+        color: $color
+
